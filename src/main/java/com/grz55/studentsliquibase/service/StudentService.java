@@ -1,5 +1,7 @@
-package com.grz55.studentsliquibase;
+package com.grz55.studentsliquibase.service;
 
+import com.grz55.studentsliquibase.model.Student;
+import com.grz55.studentsliquibase.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

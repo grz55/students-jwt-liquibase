@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="2" author="grz55">
+        <insert tableName="user">
+            <column name="id" value="1"/>
+            <column name="username" value="user"/>
+            <column name="password" value="$2a$10$C6ut/mc.21/7.F6rrGxO2ecmxrP/quHYeZi3aUiCqzLc1kOzC0TFK"/>
+            <column name="role" value="USER"/>
+            <column name="is_account_non_expired" value="true"/>
+            <column name="is_account_non_locked" value="true"/>
+            <column name="is_credentials_non_expired" value="true"/>
+            <column name="is_enabled" value="true"/>
+        </insert>
+        <insert tableName="user">
+            <column name="id" value="2"/>
+            <column name="username" value="admin"/>
+            <column name="password" value="$2a$10$JE0XkUfuhvyk3.z6lWcKFuSNR6WZDPtox56al3izDkY/ASXAZSwAy"/>
+            <column name="role" value="ADMIN"/>
+            <column name="is_account_non_expired" value="true"/>
+            <column name="is_account_non_locked" value="true"/>
+            <column name="is_credentials_non_expired" value="true"/>
+            <column name="is_enabled" value="true"/>
+        </insert>
+        <insert tableName="student">
+            <column name="id" value="1"/>
+            <column name="name" value="Ann Logan"/>
+            <column name="year_of_birth" value="1985"/>
+        </insert>
+        <insert tableName="student">
+            <column name="id" value="2"/>
+            <column name="name" value="Bernie Logan"/>
+            <column name="year_of_birth" value="1985"/>
+        </insert>
+        <insert tableName="student">
+            <column name="id" value="3"/>
+            <column name="name" value="George Logan"/>
+            <column name="year_of_birth" value="1984"/>
+        </insert>
+        <insert tableName="student">
+            <column name="id" value="4"/>
+            <column name="name" value="Frank Logan"/>
+            <column name="year_of_birth" value="1983"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

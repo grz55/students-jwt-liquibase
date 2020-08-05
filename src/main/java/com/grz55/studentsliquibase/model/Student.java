@@ -1,4 +1,4 @@
-package com.grz55.studentsliquibase;
+package com.grz55.studentsliquibase.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

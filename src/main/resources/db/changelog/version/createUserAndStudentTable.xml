@@ -8,6 +8,18 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <changeSet id="1" author="grz55">
+        <createTable tableName="user">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="varchar(255)"/>
+            <column name="password" type="varchar(255)"/>
+            <column name="role" type="varchar(255)"/>
+            <column name="is_account_non_expired" type="boolean"/>
+            <column name="is_account_non_locked" type="boolean"/>
+            <column name="is_credentials_non_expired" type="boolean"/>
+            <column name="is_enabled" type="boolean"/>
+        </createTable>
         <createTable tableName="student">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>

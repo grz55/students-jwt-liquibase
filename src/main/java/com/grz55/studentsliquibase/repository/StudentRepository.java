@@ -1,5 +1,6 @@
-package com.grz55.studentsliquibase;
+package com.grz55.studentsliquibase.repository;
 
+import com.grz55.studentsliquibase.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
