@@ -17,7 +17,7 @@ This app provides students API. Open access to /students/all endpoint. Other end
 
 # Technologies: 
 
-Java, Spring Boot, Spring Security, Spring Data, Hibernate, H2
+Java, Spring Boot, Spring Security, Spring Data, Hibernate, H2 database, liquibase
 
 # App features:
 
