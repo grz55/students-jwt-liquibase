@@ -4,7 +4,7 @@
 
 Pull into IDE, app runs on Tomcat server.
 Postman the best for tests.
-Used POST /login to login by credentials, then you have full access to API.
+Use POST /login to login by credentials, then you have full access to API.
 When compiling, liquibase xml files should populate H2 in-memory database.
 
 # Test credentials: 
